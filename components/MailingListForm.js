@@ -8,6 +8,7 @@ export default function MailingListForm() {
 
 
   function handleSubmit(event) {
+
     event.preventDefault();
     fetch("/", {
       method: "POST",
@@ -38,8 +39,6 @@ export default function MailingListForm() {
       name="mailing-list"
       onSubmit={handleSubmit}
     >
-      <input type="hidden" name="form-name" value="mailing-list" />
-
       <h3>Interested in learning more?</h3>
       <p>Stay ahead with the latest updates and product releases! Subscribe to our mailing list and be among the first to know about new features and exclusive promotions. </p>
 
