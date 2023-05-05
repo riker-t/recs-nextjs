@@ -1,4 +1,3 @@
-import image1 from "../public/andre-sebastian-KVDSfJ79_JU-unsplash.jpg";
 
 
 export default function HomePageGalleryPhoto() {
@@ -10,7 +9,6 @@ export default function HomePageGalleryPhoto() {
                 width: '100px',
                 height: '100px'
             }}>
-                <img src = {image1}></img>
             </div>
 
         </>

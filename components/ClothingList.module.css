@@ -1,0 +1,84 @@
+
+
+.clothingName {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 5px;
+
+}
+
+.clothingDescription {
+    font-size: 14px;
+    margin-bottom: 10px;
+    color: #666;
+}
+
+.container li {
+    margin: 10px;
+    padding: 1px;
+    width: 100%;
+    max-width: 400px;
+}
+
+.container ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+
+
+.clothingImageWrapper {
+    position: relative;
+    overflow: hidden;
+    padding-top: 125%;
+    width: 100%;
+    margin-bottom: 15px;
+
+}
+
+.clothingImage {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.3s;
+}
+
+.clothingImageWrapper:hover .clothing-image {
+    transform: scale(1.1);
+}
+
+.clothingImageWrapper::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.2);
+    opacity: 0;
+    transition: opacity 0.3s;
+    pointer-events: none;
+}
+
+.clothingImageWrapper:hover::after {
+    opacity: 1;
+}
+
+
+@media (min-width: 768px) {
+    .container li {
+        width: calc(50% - 20px);
+    }
+}
+
+@media (min-width: 1024px) {
+    .container li {
+        width: calc(33.333% - 20px);
+    }
+}

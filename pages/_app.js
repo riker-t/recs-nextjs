@@ -1,16 +1,13 @@
 import '@styles/globals.css'
 import NavigationBar from '@components/NavigationBar'
-import Home from 'pages'
 
-
-function Application() {
+function Application({ Component, pageProps }) {
   return (
     <>
       <NavigationBar/>
-      <Home/>
+      <Component {...pageProps} />
     </>
-  )
-}
-
+  );
+};
 
 export default Application
