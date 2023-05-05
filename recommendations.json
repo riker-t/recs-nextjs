@@ -5,7 +5,8 @@
       "category": "Outerwear",
       "recommendedBy": "John Doe",
       "imageUrl": "https://images.unsplash.com/photo-1557002666-513ca8eaa3c8?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8OXx8c3lsaXNoJTIwamFja2V0fGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=800&q=60",
-      "link": "https://example-store.com/jacket"
+      "link": "https://www.revolve.com/",
+      "description": "A very stylish jacket. Love this for Fall days!"
     },
     {
       "id": "2",
@@ -13,7 +14,7 @@
       "category": "Dresses",
       "recommendedBy": "Jane Doe",
       "imageUrl": "https://images.unsplash.com/photo-1595777457583-95e059d581b8?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8ZHJlc3N8ZW58MHx8MHx8",
-      "link": "https://example-store.com/dress"
+      "link": "https://www.revolve.com/"
     },
     {
       "id": "3",
@@ -21,7 +22,7 @@
       "category": "Tops",
       "recommendedBy": "Alice Smith",
       "imageUrl": "https://images.unsplash.com/photo-1590736969955-71cc94801759?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=654&q=80",
-      "link": "https://example-store.com/tshirt"
+      "link": "https://www.revolve.com/"
     },
     {
       "id": "4",
@@ -37,7 +38,18 @@
       "category": "Footwear",
       "recommendedBy": "Charlie Brown",
       "imageUrl": "https://images.unsplash.com/photo-1587587448844-c1036562fec1?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MjB8fHJ1bm5pbmclMjBzaG9lc3xlbnwwfHwwfHw%3D&auto=format&fit=crop&w=800&q=60",
-      "link": "https://example-store.com/shoes"
+      "link": "https://www.revolve.com/",
+      "description": "Stylish, but will still wreck your knees"
+
+    },
+    {
+      "id": "6",
+      "title": "My favorite company",
+      "category": "Website",
+      "recommendedBy": "Charlie Brown",
+      "imageUrl": "",
+      "link": "https://www.yext.com",
+      "description": "They treat you well"
     }
   ]
   

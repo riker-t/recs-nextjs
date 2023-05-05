@@ -48,13 +48,25 @@ export default function ClothingList() {
       <ul>
         {recommendations.map((recommendation, index) => (
           <li key={index}>
-            <h3>{recommendation.title}</h3>
-            <p>Category: {recommendation.category}</p>
-            <p>Recommended by: {recommendation.recommendedBy}</p>
-            <img src={recommendation.imageUrl} alt={recommendation.title} width="200" />
-            <button className="visit-store-button" onClick={() => window.open(website, '_blank')}>
-              Visit Link
-            </button>
+            <div className="clothing-item">
+              <div className="clothing-image-wrapper">
+                <a href={recommendation.link} target="_blank" rel="noopener noreferrer">
+                  {/* <img className="clothing-image" src={recommendation.imageUrl} alt={recommendation.title} width="200" /> */}
+                  <img
+                    className="clothing-image"
+                    src={recommendation.imageUrl || `https://image.thum.io/get/${recommendation.link}`}
+                    alt={recommendation.title}
+                    
+                  />
+
+                </a>
+              </div>
+              <div className="clothing-name">{recommendation.title}</div>
+              <div className="clothing-description">{recommendation.description}</div>
+
+              {/* ... remaining elements ... */}
+            </div>
+
 
           </li>
         ))}
@@ -62,21 +74,75 @@ export default function ClothingList() {
       <style jsx>{`
   /* ... existing styles ... */
 
-  .visit-store-button {
-    background-color: #0070f3;
-    border: none;
-    border-radius: 5px;
-    color: #fff;
-    cursor: pointer;
-    font-size: 14px;
-    margin-top: 10px;
-    padding: 8px 15px;
-    text-decoration: none;
-    transition: background-color 0.2s;
-  }
 
   .visit-store-button:hover {
     background-color: #0051a2;
+  }
+  
+  .clothing-name {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 5px; /* Add this line */
+
+  }
+  .clothing-description {
+    font-size: 14px; /* Adjust this value as needed */
+    margin-bottom: 10px; /* Add this line */
+    color: #666; /* Adjust this value as needed */
+  }
+
+  li {
+    // background-color: #f3f3f3;
+    // border: 1px solid #ccc;
+    // border-radius: 5px;
+    // box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    margin: 10px;
+    padding: 1px;
+    width: 100%;
+    max-width: 400px;
+  }
+
+  
+  /* ... existing styles ... */
+
+  .clothing-image-wrapper {
+    position: relative;
+    overflow: hidden;
+    padding-top: 125%; /* Adjust this value for the desired aspect ratio */
+    width: 100%; /* Add this line */
+    margin-bottom: 15px; /* Increase this value if you need more spacing */
+
+  }
+
+  .clothing-image {
+    position: absolute; /* Add this line */
+    top: 0; /* Add this line */
+    left: 0; /* Add this line */
+    width: 100%; /* Add this line */
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.3s;
+  }
+
+  .clothing-image-wrapper:hover .clothing-image {
+    transform: scale(1.1);
+  }
+
+  .clothing-image-wrapper::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.2);
+    opacity: 0;
+    transition: opacity 0.3s;
+    pointer-events: none;
+  }
+
+  .clothing-image-wrapper:hover::after {
+    opacity: 1;
   }
 
   /* ... existing media queries ... */
@@ -85,29 +151,3 @@ export default function ClothingList() {
     </div>
   );
 };
-
-export async function getServerSideProps() {
-  // Replace this with a call to your actual API endpoint
-  const recommendations = [
-    {
-      title: 'Stylish Jacket',
-      category: 'Outerwear',
-      recommendedBy: 'John Doe',
-      imageUrl: 'https://example.com/images/jacket.jpg',
-      link: 'https://example-store.com/jacket',
-    },
-    {
-      title: 'Elegant Dress',
-      category: 'Dresses',
-      recommendedBy: 'Jane Doe',
-      imageUrl: 'https://example.com/images/dress.jpg',
-      link: 'https://example-store.com/dress',
-    },
-  ];
-
-  return {
-    props: {
-      recommendations,
-    },
-  };
-}

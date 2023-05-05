@@ -41,18 +41,18 @@ export default function ListMetadata({ user, profilePhoto, title, description, l
               border-radius: 50%;
               height: 100px;
               width: 100px;
-              margin-bottom: 10px;
+              margin-bottom: 15px;
             }
     
             .list-title {
               font-size: 24px;
-              margin: 5px 0;
+              margin: 15px 0;
             }
     
             .list-description {
               color: #666;
               font-size: 14px;
-              margin-bottom: 10px;
+              margin-bottom: 15px;
             }
     
             .list-stats {
@@ -61,6 +61,7 @@ export default function ListMetadata({ user, profilePhoto, title, description, l
               display: flex;
               flex-wrap: wrap;
               justify-content: center;
+              margin-bottom: 15px;
             }
     
             .likes-count,
