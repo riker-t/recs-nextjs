@@ -1,0 +1,43 @@
+[
+    {
+      "id": "1",
+      "title": "Stylish Jacket",
+      "category": "Outerwear",
+      "recommendedBy": "John Doe",
+      "imageUrl": "https://images.unsplash.com/photo-1557002666-513ca8eaa3c8?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8OXx8c3lsaXNoJTIwamFja2V0fGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=800&q=60",
+      "link": "https://example-store.com/jacket"
+    },
+    {
+      "id": "2",
+      "title": "Elegant Dress",
+      "category": "Dresses",
+      "recommendedBy": "Jane Doe",
+      "imageUrl": "https://images.unsplash.com/photo-1595777457583-95e059d581b8?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8ZHJlc3N8ZW58MHx8MHx8",
+      "link": "https://example-store.com/dress"
+    },
+    {
+      "id": "3",
+      "title": "Casual T-Shirt",
+      "category": "Tops",
+      "recommendedBy": "Alice Smith",
+      "imageUrl": "https://images.unsplash.com/photo-1590736969955-71cc94801759?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=654&q=80",
+      "link": "https://example-store.com/tshirt"
+    },
+    {
+      "id": "4",
+      "title": "Slim Fit Jeans",
+      "category": "Pants",
+      "recommendedBy": "Bob Johnson",
+      "imageUrl": "https://images.unsplash.com/photo-1495298599282-d8920eb5009b?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8M3x8c2xpbSUyMGZpdCUyMGplYW5zfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=800&q=60",
+      "link": "https://example-store.com/jeans"
+    },
+    {
+      "id": "5",
+      "title": "Running Shoes",
+      "category": "Footwear",
+      "recommendedBy": "Charlie Brown",
+      "imageUrl": "https://images.unsplash.com/photo-1587587448844-c1036562fec1?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MjB8fHJ1bm5pbmclMjBzaG9lc3xlbnwwfHwwfHw%3D&auto=format&fit=crop&w=800&q=60",
+      "link": "https://example-store.com/shoes"
+    }
+  ]
+  
