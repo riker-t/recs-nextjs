@@ -7,7 +7,6 @@ export default function HomePageGalleryStack({justifyContent}) {
             <div style={{
                 display: 'flex',
                 flexDirection: 'column',
-                alignItems: 'center',
                 padding: '10px',
                 gap: '15px',
                 justifyContent: justifyContent,

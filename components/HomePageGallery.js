@@ -3,11 +3,12 @@ import HomePageGalleryStack from "./HomePageGalleryStack";
 export default function HomePageGallery() {
     return (
         <>
+
             <div style={{
                 display: 'flex',
                 flexDirection: 'row',
                 justifyContent: 'center',
-                // alignItems: 'flex-start',
+                alignItems: 'center',
                 padding: '0px'
             }}>
                 <HomePageGalleryStack justifyContent='flex-end'/>
