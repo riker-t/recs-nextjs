@@ -46,7 +46,7 @@ export default function MailingListForm() {
       <div style={{ display: submitted ? "none" : "block" }}>
         <input
           type="email"
-          id="email"
+          name="email"
           value={email}
           onChange={(event) => setEmail(event.target.value)}
           className={styles.inputEmail}
