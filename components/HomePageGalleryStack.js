@@ -10,7 +10,6 @@ export default function HomePageGalleryStack({justifyContent}) {
                 padding: '10px',
                 gap: '15px',
                 justifyContent: justifyContent,
-                height: '275px'
             }}>
                 <HomePageGalleryPhoto />
                 <HomePageGalleryPhoto />
