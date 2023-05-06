@@ -16,10 +16,11 @@
   padding: 12px 20px;
   width: 100%;
   border: none;
-  border-bottom: 2px solid;
+  border-bottom: 1px solid;
+  border-color: #010101;
   outline: none;
   transition: border-color 0.3s;
-  background-color: #fff3ee;
+  /* background-color: #fff3ee; */
 }
 
 .inputEmail:focus {
@@ -27,10 +28,10 @@
 }
 
 .subscribeButton {
-  background-color: #666;
+  background-color: #5f43b2;
   border: none;
-  border-radius: 50px;
-  color: white;
+  border-radius: 5px;
+  color: #fefdfd;
   cursor: pointer;
   font-size: inherit;
   margin: 15px 0;
@@ -40,7 +41,7 @@
 }
 
 .subscribeButton:hover {
-  background-color: #666;
+  background-color: #b1aebb;
 }
 
 @media (max-width: 480px) {

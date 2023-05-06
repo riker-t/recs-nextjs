@@ -16,10 +16,10 @@ export default function HomePageGalleryPhoto() {
                 <img
                     style={{
                         objectFit: "cover", 
-                        borderRadius: "20px",
-                        border: "1px solid black",
-                        width: "100px",
-                        height: "100px",
+                        borderRadius: "10px",
+                        // border: "3px solid #5f43b2",
+                        width: "125",
+                        height: "200",
                         display: "flex",
                     }}
                     src='https://images.unsplash.com/photo-1603217039863-aa0c865404f7?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8aW5mbHVlbmNlcnxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=800&q=60'>

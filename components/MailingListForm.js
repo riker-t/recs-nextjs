@@ -39,8 +39,8 @@ export default function MailingListForm() {
       name="mailing-list"
       onSubmit={handleSubmit}
     >
-      <h3>Interested in learning more?</h3>
-      <p>Stay ahead with the latest updates and product releases! Subscribe to our mailing list and be among the first to know about new features and exclusive promotions. </p>
+      {/* <h3>Enter your email:</h3> */}
+      {/* <p>Stay ahead with the latest updates and product releases! Subscribe to our mailing list and be among the first to know about new features and exclusive promotions. </p> */}
 
 
       <div style={{ display: submitted ? "none" : "block" }}>
@@ -55,7 +55,7 @@ export default function MailingListForm() {
       </div>
       {submitted && <p>Thank you for subscribing! We'll reach out with more information as development continues.</p>}
       <button type="submit" disabled={submitted} className={styles.subscribeButton}>
-        {submitted ? "Done!" : "Subscribe"}
+        {submitted ? "Done!" : "Learn More"}
       </button>
 
     </form>

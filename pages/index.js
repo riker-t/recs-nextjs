@@ -1,12 +1,9 @@
-import ClothingList from "@components/ClothingList";
-import Footer from "@components/Footer";
-import FeedbackForm from "@components/MailingListForm";
-import HomePageGallery from "@components/HomePageGallery"
-import Head from "next/head";
-import HomePageIntroSection from "@components/HomePageIntroSection";
 
+import HomePageGallery from "@components/HomePageGallery"
+import HomePageIntroSection from "@components/HomePageIntroSection";
 import MailingListForm from "@components/MailingListForm";
 
+import Head from "next/head";
 import Link from "next/link";
 
 export default function Home() {
@@ -32,8 +29,8 @@ export default function Home() {
         }}>
           <MailingListForm/>
 
-          <h3><Link href="/example-list">Example</Link></h3>
-          <h3><Link href="/pricing">Pricing</Link></h3>
+          {/* <h3><Link href="/example-list">Example</Link></h3> */}
+          {/* <h3><Link href="/pricing">Pricing</Link></h3> */}
         </div>
       </div>
     </div>

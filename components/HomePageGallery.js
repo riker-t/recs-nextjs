@@ -15,6 +15,8 @@ export default function HomePageGallery() {
                 <HomePageGalleryStack justifyContent='flex-start'/>
                 <HomePageGalleryStack justifyContent='flex-end'/>
                 <HomePageGalleryStack justifyContent='flex-start'/>
+                <HomePageGalleryStack justifyContent='flex-end'/>
+                <HomePageGalleryStack justifyContent='flex-start'/>                
             </div>
 
         </>
