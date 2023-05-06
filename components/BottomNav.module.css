@@ -12,22 +12,20 @@
 
 .bottomNav {
     display: flex;
-    justify-content: space-around; /* Update this line */
-    /* Update this line */
+    justify-content: space-around;
     align-items: center;
     position: fixed;
     bottom: 0;
-    left: 12.5%;
-    right: 12.5%;
+    /* left: 12.5%;
+    right: 12.5%; */
     height: 60px;
     background-color: var(--base);
     z-index: 1000;
     width: 50%;
-    padding: 0 1rem;
+    /* padding: 0 1rem; */
     box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.1);
-    margin: 0 auto; /* Add this line */
-
-
+    margin: 0 auto; 
+    flex: 1; 
 
 }
 
@@ -43,6 +41,7 @@
     height: 100%;
     border-right: 1px solid var(--cta);
     box-sizing: border-box;
+
 }
 
 .bottomNav a:hover {
@@ -58,3 +57,14 @@
     font-size: 2rem;
     /* Add this line */
 }
+
+.visible {
+    transition: transform 0.3s ease-in-out;
+    transform: translateY(0);
+  }
+  
+  .hidden {
+    transition: transform 0.3s ease-in-out;
+    transform: translateY(100%);
+  }
+  

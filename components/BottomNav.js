@@ -1,13 +1,33 @@
-import React from 'react';
+import { useState, useEffect, useCallback } from 'react';
 import styles from './BottomNav.module.css';
 import { FaHome, FaFolderOpen } from 'react-icons/fa';
 import { FaUser } from 'react-icons/fa';
 
 
 export default function BottomNav() {
+    const [lastScrollPosition, setLastScrollPosition] = useState(0);
+    const [isVisible, setIsVisible] = useState(true);
+
+    const handleScroll = useCallback(() => { // Wrap handleScroll with useCallback
+        const currentScrollPosition = window.pageYOffset;
+        const isScrollingUp = lastScrollPosition > currentScrollPosition;
+
+        setIsVisible(isScrollingUp || currentScrollPosition === 0);
+        setLastScrollPosition(currentScrollPosition);
+    }, [lastScrollPosition]);
+
+    useEffect(() => {
+        window.addEventListener('scroll', handleScroll);
+
+        return () => {
+            window.removeEventListener('scroll', handleScroll);
+        };
+    }, [handleScroll]);
     return (
         <>
-            <div className={styles.container}> {/* Add this line */}
+            <div
+                className={`${styles.container} ${isVisible ? styles.visible : styles.hidden}`}
+            >
 
                 <nav className={styles.bottomNav}>
                     {/* Add your navigation items here */}

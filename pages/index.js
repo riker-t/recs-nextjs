@@ -27,7 +27,7 @@ export default function Home() {
           flexDirection: 'column',
           padding: '15px'
         }}>
-          <MailingListForm/>
+          <MailingListForm />
 
           {/* <h3><Link href="/example-list">Example</Link></h3> */}
           {/* <h3><Link href="/pricing">Pricing</Link></h3> */}
