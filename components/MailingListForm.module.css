@@ -6,14 +6,12 @@
   align-items: center;
   text-align: center;
   width: 100%;
-  max-width: 400px;
   margin: 0 auto;
 }
 
 .inputEmail {
-  font-size: inherit;
   margin: 15px 0;
-  padding: 12px 20px;
+  /* padding: 12px 20px; */
   width: 100%;
   border: none;
   border-bottom: 1px solid;
@@ -28,7 +26,7 @@
 }
 
 .subscribeButton {
-  background-color: #5f43b2;
+  background-color: var(--cta);
   border: none;
   border-radius: 5px;
   color: #fefdfd;

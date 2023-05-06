@@ -1,4 +1,4 @@
-import { FaHome } from 'react-icons/fa';
+import { FaHouse } from 'react-icons/fa';
 import Link from 'next/link'
 
 
