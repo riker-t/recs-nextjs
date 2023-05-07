@@ -9,6 +9,14 @@
       "description": "A very stylish jacket. Love this for Fall days!"
     },
     {
+      "id": "1",
+      "title": "Panadería Rosetta",
+      "category": "Café",
+      "imageUrl": "",
+      "link": "https://www.panaderiarosetta.com/",
+      "description": "Famous bakery for pastries & coffee"
+    },
+    {
       "id": "2",
       "title": "Elegant Dress",
       "category": "Dresses",
