@@ -16,7 +16,7 @@ export default function CreateListForm() {
 
     const prompt = "Hello"
     try {
-      const response = await fetch('./.netlify/functions/call_openai', {
+      const response = await fetch('/api/call_openai', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',

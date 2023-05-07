@@ -5,6 +5,7 @@ const axios = require('axios');
 const openaiApiKey = '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';
 
 exports.handler = async function (event, context) {
+  console.log("OPENAI")
   if (event.httpMethod !== 'POST') {
     return { statusCode: 405, body: 'Method Not Allowed' };
   }
