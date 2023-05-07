@@ -15,15 +15,15 @@
   width: 100%;
   border: none;
   border-bottom: 1px solid;
-  border-color: #010101;
-  outline: none;
+  border-color: var(--cta);
+  /* outline: none; */
   transition: border-color 0.3s;
   /* background-color: #fff3ee; */
 }
 
-.inputEmail:focus {
+/* .inputEmail:focus {
   border-color: #666;
-}
+} */
 
 .subscribeButton {
   background-color: var(--cta);

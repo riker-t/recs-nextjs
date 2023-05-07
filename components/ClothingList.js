@@ -1,9 +1,24 @@
-import recommendations from '../recommendations.json'
+import recommendations from '../recommendations-mxc.json'
 import ListMetadata from "@components/ListMetadata";
 import styles from './ClothingList.module.css'
+import ListToggle from '@components/ListToggle';
+import React, { useState } from 'react';
+
+import GridView from './GridView';
+import ListView from './ListView';
 
 
 export default function ClothingList() {
+  const [isGridView, setIsGridView] = useState(true);
+
+  const handleToggle = (newView) => {
+    setIsGridView(newView);
+  };
+
+
+
+
+
   const metadata = {
     user: 'Jane Doe',
     profilePhoto: 'https://images.unsplash.com/photo-1603217039863-aa0c865404f7?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8aW5mbHVlbmNlcnxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=800&q=60',
@@ -14,30 +29,17 @@ export default function ClothingList() {
   };
 
   return (
-    <div className = {styles.container}>
+    <div className={styles.container}>
       <ListMetadata {...metadata} />
-      <ul>
-        {recommendations.map((recommendation, index) => (
-          <li key={index} >
-            <div>
-              <div className={styles.clothingImageWrapper}>
-                <a href={recommendation.link} target="_blank" rel="noopener noreferrer">
-                  <img
-                    className={styles.clothingImage}
-                    src={recommendation.imageUrl || `https://image.thum.io/get/${recommendation.link}`}
-                    alt={recommendation.title}
-                  />
+      <div>
+        <ListToggle onToggle={handleToggle} />
+        {isGridView ? (
+          <GridView />
+        ) : (
+          <ListView />
+        )}
 
-                </a>
-              </div>
-              <div className={styles.clothingName}>{recommendation.title}</div>
-              <div className={styles.clothingDescription}>{recommendation.description}</div>
-            </div>
-
-
-          </li>
-        ))}
-      </ul>
+      </div>
     </div>
   );
 };

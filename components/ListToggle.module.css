@@ -1,0 +1,76 @@
+/* ListToggle.module.css */
+.toggleContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+  }
+  
+  .toggleButton {
+    display: flex;
+    box-shadow: 0 -2px 15px rgba(0, 0, 0, 0.1);
+
+    position: relative;
+    background: none;
+    border: none;
+    cursor: pointer;
+    outline: none;
+    border-radius: 200px;
+    /* border: 1px solid var(--cta); */
+    overflow: hidden;
+    background-color: var(--primary);
+    width: 200px;
+    height: 60px;
+    padding: 10px;
+  }
+  
+  .iconBackground {
+    position: absolute;
+    background-color: var(--cta);
+    width: 50%;
+    height: calc(100% + 20px);
+    top: -10px;
+    transition: left 0.3s ease-in-out;
+    border-radius: 200px;
+    z-index: 1;
+  }
+  
+  .left {
+    left: 0;
+  }
+  
+  .right {
+    left: 50%;
+  }
+  
+  .icon {
+    font-size: 1em;
+    width: 50%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    z-index: 2;
+  }
+
+  .icon .active {
+    color: var(--cta);
+
+  }
+  
+  .toggleButton .active {
+    color: var(--base);
+  }
+  
+  @media (max-width: 768px) {
+    .toggleButton {
+      width: 150px;
+      height: 40px;
+    }
+    .iconBackground {
+      height: calc(100% + 10px);
+      top: -5px;
+    }
+  }
+  

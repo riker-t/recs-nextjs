@@ -1,0 +1,122 @@
+[
+    {
+        "id": "1",
+        "title": "Roma Norte",
+        "category": "Neighborhood",
+        "imageUrl": "",
+        "link": "",
+        "description": "Modern, young, hip area with parks & shops"
+    },
+    {
+        "id": "2",
+        "title": "Panadería Rosetta",
+        "category": "Café",
+        "imageUrl": "",
+        "link": "https://www.panaderiarosetta.com/",
+        "description": "Famous bakery for pastries & coffee"
+    },
+    {
+        "id": "3",
+        "title": "Contramar",
+        "category": "Restaurant",
+        "imageUrl": "",
+        "link": "https://www.contramar.com.mx/",
+        "description": "High-end seafood, known for special fish"
+    },
+    {
+        "id": "4",
+        "title": "Blanco Colima",
+        "category": "Bar",
+        "imageUrl": "",
+        "link": "",
+        "description": "Trendy house-converted bar with DJ sets"
+    },
+    {
+        "id": "5",
+        "title": "Maison Artemisia",
+        "category": "Bar",
+        "imageUrl": "",
+        "link": "",
+        "description": "Speakeasy-style bar in a 3-story house"
+    },
+    {
+        "id": "6",
+        "title": "Polanco",
+        "category": "Neighborhood",
+        "imageUrl": "",
+        "link": "",
+        "description": "Upscale area with luxury shopping & dining"
+    },
+    {
+        "id": "7",
+        "title": "Pujol",
+        "category": "Restaurant",
+        "imageUrl": "",
+        "link": "https://www.pujol.com.mx/",
+        "description": "Renowned fine dining, tasting menu"
+    },
+    {
+        "id": "8",
+        "title": "Quintonil",
+        "category": "Restaurant",
+        "imageUrl": "",
+        "link": "http://www.quintonil.com/",
+        "description": "Innovative tasting menu & mezcal cocktails"
+    },
+    {
+        "id": "9",
+        "title": "Taquería El Turix",
+        "category": "Restaurant",
+        "imageUrl": "",
+        "link": "",
+        "description": "Must-try hole-in-the-wall taco spot"
+    },
+    {
+        "id": "10",
+        "title": "Museo Soumaya",
+        "category": "Museum",
+        "imageUrl": "",
+        "link": "https://www.soumaya.com.mx/",
+        "description": "Impressive art museum in Polanco"
+    },
+    {
+        "id": "11",
+        "title": "Hanky Panky",
+        "category": "Bar",
+        "imageUrl": "",
+        "link": "",
+        "description": "Unique speakeasy with crafted cocktails"
+    },
+    {
+        "id": "12",
+        "title": "Museo Nacional de Antropología",
+        "category": "Museum",
+        "imageUrl": "",
+        "link": "https://www.mna.inah.gob.mx/",
+        "description": "Renowned museum, Mexican cultural heritage"
+    },
+    {
+        "id": "13",
+        "title": "Frida Kahlo Museum",
+        "category": "Museum",
+        "imageUrl": "",
+        "link": "https://www.museofridakahlo.org.mx/",
+        "description": "Iconic artist's house, now a museum"
+    },
+    {
+        "id": "14",
+        "title": "Lucha Libre",
+        "category": "Event",
+        "imageUrl": "",
+        "link": "",
+        "description": "Experience thrilling Mexican wrestling"
+    },
+    {
+        "id": "15",
+        "title": "Teotihuacan Hot Air Balloon Tour",
+        "category": "Tour",
+        "imageUrl": "",
+        "link": "",
+        "description": "Soar above pyramids on a balloon tour"
+    }
+]
