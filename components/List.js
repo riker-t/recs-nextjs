@@ -1,12 +1,29 @@
 import ListHeader from "./ListHeader";
 import GridView from './GridView';
 import ListView from './ListView';
-import React, { useState } from 'react';
+import React, { useState, useRef, useEffect } from 'react';
 
 
 
 export default function List() {
     const [isGridView, setIsGridView] = useState(true);
+    const [headerHeight, setHeaderHeight] = useState(0);
+    const headerRef = useRef(null);
+
+    const updateHeaderHeight = () => {
+        if (headerRef.current) {
+            setHeaderHeight(headerRef.current.offsetHeight);
+        }
+    };
+
+    useEffect(() => {
+        updateHeaderHeight();
+        window.addEventListener('resize', updateHeaderHeight);
+
+        return () => {
+            window.removeEventListener('resize', updateHeaderHeight);
+        };
+    }, []);
 
     const handleToggle = (newView) => {
         setIsGridView(newView);
@@ -23,13 +40,14 @@ export default function List() {
     return (
         <>
             <ListHeader
+                ref={headerRef}
                 photoUrl={metadata.profilePhoto}
                 listTitle={metadata.title}
                 authorName={metadata.user}
                 handleToggle={handleToggle}
 
             />
-            <div>
+            <div style={{ marginTop: headerHeight }}>
                 {isGridView ? (
                     <GridView />
                 ) : (
