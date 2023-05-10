@@ -13,6 +13,14 @@
     color: #666;
 }
 
+
+.container {
+    margin: 10px;
+    padding: 1px;
+    width: 100%;
+    /* max-width: 400px; */
+}
+
 .container li {
     margin: 10px;
     padding: 1px;
