@@ -46,8 +46,8 @@ export default function Gallery() {
                     </a>
                 </div>
                 <div className = {styles.galleryImageMeta}>
-                    <h3>{recommendations[currentImageIndex].title}</h3>
-                    <p>{recommendations[currentImageIndex].description}</p>
+                    <div className={styles.galleryTitle}>{recommendations[currentImageIndex].title}</div>
+                    <div className={styles.galleryDescription}>{recommendations[currentImageIndex].description}</div>
                 </div>
             </div>
         </div>
