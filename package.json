@@ -26,7 +26,8 @@
     "react-bootstrap": "^2.7.4",
     "react-dom": "^18.0.0",
     "react-icons": "^4.8.0",
-    "react-router-dom": "^6.11.0"
+    "react-router-dom": "^6.11.0",
+    "react-swipeable": "^7.0.0"
   },
   "devDependencies": {
     "netlify-plugin-cypress": "2.2.1"
