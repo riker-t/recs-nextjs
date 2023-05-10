@@ -1,6 +1,4 @@
 import ListHeader from "./ListHeader";
-import GridView from './GridView';
-import ListView from './ListView';
 import React, { useState, useRef, useEffect } from 'react';
 import Gallery from "./Gallery";
 import ClothingList from "./ClothingList";

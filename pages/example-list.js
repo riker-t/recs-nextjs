@@ -1,4 +1,4 @@
-import ClothingList from "@components/ClothingList";
+// import ClothingList from "@components/ClothingList";
 import List from "@components/List"
 
 export default function ExampleList() {

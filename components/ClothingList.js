@@ -1,10 +1,7 @@
-import ListMetadata from "@components/ListMetadata";
 import styles from './ClothingList.module.css'
-import ListToggle from '@components/ListToggle';
 import React, { useState } from 'react';
 
 import GridView from './GridView';
-import ListView from './ListView';
 
 
 export default function ClothingList() {
@@ -30,11 +27,12 @@ export default function ClothingList() {
   return (
     <div className={styles.container}>
       <div>
-        {isGridView ? (
+        <GridView/>
+        {/* {isGridView ? (
           <GridView />
         ) : (
           <ListView />
-        )}
+        )} */}
 
       </div>
     </div>
