@@ -57,7 +57,10 @@
 
 .galleryTitle {
     font-size: 20px;
-    color: var(--black)
+    font-weight: 700;
+
+    color: var(--black);
+
 }
 
 .galleryDescription {
