@@ -1,14 +1,23 @@
 [build]
   command = "npm run build"
-  publish = ".next"
-  functions = "./netlify/functions"
+  publish = "out"
+  functions = "netlify/functions"
 
+[[plugins]]
+  package = "@netlify/plugin-nextjs"
 
 [[plugins]]
   package = "netlify-plugin-cypress"
 
+[dev]
+  command = "npm run dev"
+  port = 8888
+  targetPort = 3000
+  publish = "out"
+  framework = "#custom"
+
 [[redirects]]
-  from = "/api/*" 
+  from = "/api/*"
   to = "/.netlify/functions/:splat"
-  status = 200 # ok code
-  force = true # ensure to always redirect
+  status = 200
+  force = true
