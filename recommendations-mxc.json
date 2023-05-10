@@ -3,15 +3,15 @@
         "id": "1",
         "title": "Roma Norte",
         "category": "Neighborhood",
-        "imageUrl": "",
-        "link": "",
+        "imageUrl": "https://anearthlyparadise.com/wp-content/uploads/2021/07/IMG_8419-2-1.jpg",
+        "link": "https://anearthlyparadise.com/best-things-to-do-in-roma-norte-mexico-city/",
         "description": "Modern, young, hip area with parks & shops"
     },
     {
         "id": "2",
         "title": "Panadería Rosetta",
         "category": "Café",
-        "imageUrl": "",
+        "imageUrl": "https://assets.bonappetit.com/photos/58e0799638c0ce05051b702c/16:9/w_2560,c_limit/Churreria%20El%20Moro_counter.jpg",
         "link": "https://www.panaderiarosetta.com/",
         "description": "Famous bakery for pastries & coffee"
     },
@@ -28,7 +28,7 @@
         "title": "Blanco Colima",
         "category": "Bar",
         "imageUrl": "",
-        "link": "",
+        "link": "https://www.blancocolimamx.com/",
         "description": "Trendy house-converted bar with DJ sets"
     },
     {
@@ -36,7 +36,7 @@
         "title": "Maison Artemisia",
         "category": "Bar",
         "imageUrl": "",
-        "link": "",
+        "link": "https://www.maisonartemisia.com/",
         "description": "Speakeasy-style bar in a 3-story house"
     },
     {
@@ -67,7 +67,7 @@
         "id": "9",
         "title": "Taquería El Turix",
         "category": "Restaurant",
-        "imageUrl": "",
+        "imageUrl": "https://res.cloudinary.com/the-infatuation/image/upload/c_fill,w_1200,ar_4:3,g_auto,f_auto/cms/reviews/el-turix/banners/1481155244.35",
         "link": "",
         "description": "Must-try hole-in-the-wall taco spot"
     },

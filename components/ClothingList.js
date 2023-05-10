@@ -1,4 +1,3 @@
-import recommendations from '../recommendations-mxc.json'
 import ListMetadata from "@components/ListMetadata";
 import styles from './ClothingList.module.css'
 import ListToggle from '@components/ListToggle';
@@ -30,9 +29,7 @@ export default function ClothingList() {
 
   return (
     <div className={styles.container}>
-      <ListMetadata {...metadata} />
       <div>
-        <ListToggle onToggle={handleToggle} />
         {isGridView ? (
           <GridView />
         ) : (
