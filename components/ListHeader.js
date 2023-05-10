@@ -28,7 +28,7 @@ const ListHeader = React.forwardRef(({ photoUrl, listTitle, authorName, handleTo
           <img src={photoUrl} alt="Profile" className={styles.image} />
           <div className={styles.listInfo}>
             <h1 className={styles.listTitle}>{listTitle}</h1>
-            <p className={styles.author}>{authorName}</p>
+            <p className={styles.author}>by {authorName}</p>
           </div>
         </div>
         <ListToggle onToggle={handleToggle} />

@@ -25,6 +25,7 @@
     object-fit: cover;
     transition: transform 0.3s;
 }
+
 .galleryImageWrapper:hover .clothing-image {
     transform: scale(1.1);
 }
@@ -44,4 +45,12 @@
 
 .galleryImageWrapper:hover::after {
     opacity: 1;
+}
+
+.galleryImageMeta {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0px 10px;
+    /* gap: 5px; */
 }

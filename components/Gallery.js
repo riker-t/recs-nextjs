@@ -45,15 +45,11 @@ export default function Gallery() {
                         />
                     </a>
                 </div>
-                <h3>{recommendations[currentImageIndex].title}</h3>
-                <p>{recommendations[currentImageIndex].description}</p>
+                <div className = {styles.galleryImageMeta}>
+                    <h3>{recommendations[currentImageIndex].title}</h3>
+                    <p>{recommendations[currentImageIndex].description}</p>
+                </div>
             </div>
-
-            <div className="gallery-controls">
-                <button onClick={prevImage}>Previous</button>
-                <button onClick={nextImage}>Next</button>
-            </div>
-            <p></p>
         </div>
     );
 };
