@@ -65,7 +65,7 @@
   
   @media (max-width: 768px) {
     .toggleButton {
-      width: 150px;
+      width: 100px;
       height: 40px;
     }
     .iconBackground {

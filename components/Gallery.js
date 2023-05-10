@@ -21,10 +21,10 @@ export default function Gallery({ images }) {
 
     return (
         <div className={styles.galleryView} >
-            <p>Gallery</p>
-            <Swipeable {...swipeConfig}>
+            <h1>Gallery View</h1>
+            {/* <Swipeable {...swipeConfig}>
                 <img src={images[currentImage]} alt="gallery-item" className={styles.galleryImage} />
-            </Swipeable>
+            </Swipeable> */}
         </div>
     );
 };
