@@ -1,30 +1,47 @@
 import { useState } from "react";
-import { Swipeable } from "react-swipeable";
+import { useSwipeable } from 'react-swipeable';
+
 import styles from "./Gallery.module.css";
 
 
 export default function Gallery({ images }) {
-    const [currentImage, setCurrentImage] = useState(0);
+    const [currentImageIndex, setCurrentImageIndex] = useState(0);
 
-    const handleSwipeLeft = () => {
-        setCurrentImage((prevState) => (prevState + 1 < images.length ? prevState + 1 : prevState));
+    const nextImage = () => {
+        setCurrentImageIndex((prevIndex) =>
+            prevIndex === images.length - 1 ? 0 : prevIndex + 1
+        );
     };
 
-    const handleSwipeRight = () => {
-        setCurrentImage((prevState) => (prevState > 0 ? prevState - 1 : prevState));
+    const prevImage = () => {
+        setCurrentImageIndex((prevIndex) =>
+            prevIndex === 0 ? images.length - 1 : prevIndex - 1
+        );
     };
 
-    const swipeConfig = {
-        onSwipedLeft: handleSwipeLeft,
-        onSwipedRight: handleSwipeRight,
-    };
+    const swipeHandlers = useSwipeable({
+        onSwipedLeft: () => nextImage(),
+        onSwipedRight: () => prevImage(),
+        preventDefaultTouchmoveEvent: true,
+        trackMouse: true,
+    });
 
     return (
-        <div className={styles.galleryView} >
-            <h1>Gallery View</h1>
-            {/* <Swipeable {...swipeConfig}>
-                <img src={images[currentImage]} alt="gallery-item" className={styles.galleryImage} />
-            </Swipeable> */}
+        <div className={styles.galleryView} {...swipeHandlers}>
+
+            <div className={styles.galleryImageWrapper}>
+
+                <img
+                    src={images[currentImageIndex]}
+                    className={styles.galleryImage}
+                    alt={`Gallery image ${currentImageIndex + 1}`}
+                />
+            </div>
+
+            <div className="gallery-controls">
+                <button onClick={prevImage}>Previous</button>
+                <button onClick={nextImage}>Next</button>
+            </div>
         </div>
     );
 };
